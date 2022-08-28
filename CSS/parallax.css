@@ -1,0 +1,121 @@
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+    animation: moon-load 2000ms ease-in;
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 120%;
+    object-fit: fill;
+    overflow-y: hidden;
+}
+
+@keyframes moon-load{
+    0%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#brand_name{
+    position: absolute;
+    color: var(--white);
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    right: -350px;
+}
+
+section img#mountains_front{
+    z-index: 10;
+}
+
+section #btn{
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 45px;
+    background: var(--white);
+    color: var(--violet);
+    font-size: 24px;
+    z-index: 9;
+    transform: translateY(100px);
+    animation: btn_load 1000ms ease-in;
+}
+
+@keyframes btn_load{
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--violet2), transparent);
+    z-index: 1000;
+}
+
+@media(max-width: 1476px){
+    section img#moon{
+        width: 100%;
+        height: 115%;
+    }
+}
+
+@media(max-width:1436px){
+    section img#moon{
+        width: 100%;
+        height: 113%;
+    }
+}
+
+@media(max-width: 1421px){
+    section img#moon{
+        width: 100%;
+        height: 112.5%;
+    }
+}
+
+@media(max-width: 1396px){
+    section img#moon{
+        width: 100%;
+        height: 110%;
+    }
+}
+
+@media(max-width: 1363px){
+    section img#moon{
+        object-fit: cover;
+        overflow-y: hidden;
+    }
+}

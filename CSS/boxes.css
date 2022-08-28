@@ -1,0 +1,112 @@
+.boxes{
+    background: var(--violet2);
+    overflow-y: hidden;
+}
+
+.boxes .sec{
+    position: relative;
+    padding: 150px;
+    background: var(--violet2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: hidden;
+}
+
+.boxes .sec div{
+    padding: 20px;
+    background: var(--white);
+    color: var(--violet2);
+    border-radius: 15px;
+}
+.boxes .sec div h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.boxes .sec div:nth-child(1), .boxes .sec div:nth-child(6){
+    width: 40%;
+}
+
+.boxes .sec div:nth-child(2), .boxes .sec div:nth-child(5){
+    width: 26%;
+}
+
+.boxes .sec div:nth-child(3), .boxes .sec div:nth-child(4){
+    width: 28%;
+}
+
+.boxes .sec div:nth-child(4), .boxes .sec div:nth-child(5), .boxes .sec div:nth-child(6){
+    margin-top: 25px;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.reveal1{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal1.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.reveal2{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 3s all ease;
+  }
+  
+  .reveal2.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+@media(max-width:460px){
+    
+    .boxes .sec{
+        padding: 70px;
+    }
+    #sec div{
+        width: 100%;
+    }
+
+    .boxes .sec div:nth-child(2), .boxes .sec div:nth-child(3){
+        margin-top: 25px;
+    }
+  }
+
+/*.reveal{
+    position: relative;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all 2s ease ;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.sec h2{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.sec p{
+    font-size: 20px;
+}*/

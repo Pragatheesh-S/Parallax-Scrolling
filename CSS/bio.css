@@ -1,0 +1,52 @@
+.welcome{
+    background: var(--violet2);
+    color: white;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+    text-align: center;
+    /*border: 1px solid greenyellow;*/
+}
+
+.welcome #bio{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*letter-spacing: 100px;
+    animation: wlcm-h6-load 1000ms ease-in;*/
+}
+
+/*@keyframes wlcm-h6-load{
+    0%{
+        letter-spacing: 20px;
+    }
+    100%{
+        letter-spacing: 5px;
+    }
+}*/
+
+.welcome h3{
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.welcome h3 span{
+    color: aqua;
+}
+
+@media(max-width: 460px){
+
+    .welcome{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .welcome p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .welcome #bio{
+        font-size: 12px;
+    }
+
+}

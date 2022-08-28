@@ -1,0 +1,147 @@
+footer{
+    background: var(--violet2);
+    padding: 0 100px;
+    padding-bottom: 100px;
+}
+
+footer .contact-us{
+    display: flex;
+    color: var(--white);
+    justify-content: space-between;
+    /*border: 1px solid orange;*/
+}
+
+footer .contact-us .loonarc{
+    width: 35%;
+    /*border: 1px solid yellowgreen;*/
+}
+
+footer .contact-us .loonarc h2{
+    color: aqua;
+}
+
+footer .contact-us .loonarc p{
+    line-height: 150%;
+}
+
+footer .contact-us .loonarc p, 
+footer .contact-us .company .company-p, 
+footer .contact-us .form form{
+    margin-top: 25px;
+}
+
+footer .contact-us .company{
+    width: 20%;
+    /*border: 1px solid yellowgreen;*/
+    padding-left: 70px;
+}
+
+footer .contact-us .company .company-p p{
+    margin-bottom: 25px;
+}
+
+footer .contact-us .company .company-p p a{
+    color: var(--white);
+}
+
+footer .contact-us .company .company-p p a:hover{
+    animation: before-motion 0.3s ease-in;
+}
+
+footer .contact-us .company .company-p p a:hover::before{
+    content: ">> ";
+    color: var(--white);
+    padding-top: 3px;
+    animation: before-motion 0.5s ease-in;
+}
+
+@keyframes before-motion{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+footer .contact-us .form{
+    width: 22.8%;
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid yellowgreen;*/
+}
+
+footer .contact-us h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+footer .contact-us h2 span{
+    color: aqua;
+}
+
+footer .contact-us .form form input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+    outline: none;
+}
+
+footer .contact-us .form .submit{
+    width: 120px;
+    height: 40px;
+    background: var(--white);
+    color: var(--violet2);
+    border: none;
+    border-radius: 7px;
+}
+
+footer .contact-us .form .submit:hover{
+    background: aqua;
+    color: var(--violet2);
+}
+
+footer .social-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+footer .social-media a{
+    color: var(--white);
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer .social-media a:hover, 
+footer .social-media a:active{
+    color: aqua;
+}
+
+footer .copyrights{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+footer .copyrights p{
+    display: flex;
+}
+
+footer .copyrights i{
+    padding-top: 4.7px;
+    padding-right: 10px;
+}
+
+footer .copyrights .copyrights-loonarc{
+    font-weight: bold;
+}
+/*footer .contact-us .form form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aquamarine;
+}

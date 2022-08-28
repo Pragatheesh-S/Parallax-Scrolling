@@ -1,0 +1,139 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1111;
+    /*border: 1px solid yellow;*/
+}
+
+header .logo{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    pointer-events: none;
+    animation: logo-load 500ms ease-in;
+}
+
+@keyframes logo-load{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+header .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+
+header ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: list-load 500ms ease-in;
+    /*border: 10px solid yellow;
+    height: 100px;*/
+}
+
+@keyframes list-load{
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/*header ul li:nth-child(3), header ul li:nth-child(4){
+    animation: list-last-load 500ms ease-in;
+}
+
+@keyframes list-last-load{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}*/
+
+header ul li a{
+    padding: 6px 15px;
+    color: var(--white);
+    border-radius: 25px;
+    transition: all .5s;
+}
+
+header ul li a:hover,
+header ul li a:active{
+    background: var(--white);
+    color: var(--violet);
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background: var(--white);
+    margin: 5px;
+}
+
+@media screen and (max-width:875px){
+
+    header{
+        height: 60%;
+        /*border: 1px solid red;*/
+    }
+
+    header .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    header .nav-links{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 0;
+        right: 0px;
+        background: black;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .burger{
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    header ul li{
+        opacity: 0;
+    }
+}
+
+.nav-active{
+    transform: translateX(0);
+}
