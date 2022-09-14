@@ -1,10 +1,10 @@
-const navSlide = () => {
-    let burger = document.getElementById('burger');
-    let nav = document.getElementById('nav-links');
+// const navSlide = () => {
+//     let burger = document.getElementById('burger');
+//     let nav = document.getElementById('nav-links');
 
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-    });
-}
+//     burger.addEventListener('click', () => {
+//         nav.classList.toggle('nav-active');
+//     });
+// }
 
-navSlide();
+// navSlide();

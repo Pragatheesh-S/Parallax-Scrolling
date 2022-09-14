@@ -20,7 +20,7 @@ window.addEventListener('scroll', function(){
     btn.style.marginTop = value * 1.5 + 'px';
     bio.style.letterSpacing = value * 0.01 + 'px';
     //sec.style.marginTop = value * 0.1 + 'px'
-})
+});
 
 
 
@@ -41,6 +41,10 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+
+
 
 // box animation
 
