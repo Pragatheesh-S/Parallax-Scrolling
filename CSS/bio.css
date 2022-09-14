@@ -73,6 +73,10 @@
     .welcome{
         padding: 100px 25px 0;
     }
+    
+    .welcome #bio{
+        font-size: 10px;
+    }
 }
 
 
