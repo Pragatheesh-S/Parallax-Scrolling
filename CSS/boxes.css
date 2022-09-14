@@ -76,7 +76,75 @@
     opacity: 1;
   }
 
+@media screen and (max-width: 1110px){
+    .boxes .sec{
+        padding: 100px;
+    }
+}
 
+@media screen and (max-width: 1000px){
+    .boxes .sec div:nth-child(1), .boxes .sec div:nth-child(4), .boxes .sec div:nth-child(5){
+        width: 57%;
+    }
+
+    .boxes .sec div:nth-child(2), .boxes .sec div:nth-child(3), .boxes .sec div:nth-child(6){
+        width: 39%;
+    }
+
+    .boxes .sec div:nth-child(3){
+        margin-top: 25px;
+    }
+
+    .boxes .sec div p{
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .boxes .sec{
+        padding: 70px;
+    }
+
+    .boxes .sec div:nth-child(1), .boxes .sec div:nth-child(2), .boxes .sec div:nth-child(3),
+    .boxes .sec div:nth-child(4), .boxes .sec div:nth-child(5), .boxes .sec div:nth-child(6){
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .boxes .sec{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 585px){
+    .boxes .sec{
+        padding: 120px;
+    }
+
+    .boxes .sec div:nth-child(1), .boxes .sec div:nth-child(2), .boxes .sec div:nth-child(3),
+    .boxes .sec div:nth-child(4), .boxes .sec div:nth-child(5), .boxes .sec div:nth-child(6){
+        width: 100%;
+    }
+
+    .boxes .sec div:nth-child(2){
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 545px){
+    .boxes .sec{
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .boxes .sec{
+        padding: 90px;
+    }
+}
+
+/* 
 @media(max-width:460px){
     
     .boxes .sec{
@@ -89,7 +157,7 @@
     .boxes .sec div:nth-child(2), .boxes .sec div:nth-child(3){
         margin-top: 25px;
     }
-  }
+  } */
 
 /*.reveal{
     position: relative;

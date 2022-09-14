@@ -11,13 +11,7 @@ header{
     /*border: 1px solid yellow;*/
 }
 
-header .logo{
-    color: var(--white);
-    font-weight: 700;
-    font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    pointer-events: none;
+header .logo_anime{
     animation: logo-load 500ms ease-in;
 }
 
@@ -28,6 +22,16 @@ header .logo{
     100%{
         transform: translateY(0);
     }
+}
+
+header .logo{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    pointer-events: none;
+    
 }
 
 header .nav-links{
@@ -107,7 +111,11 @@ header ul li a:active{
         left: 50px;
     }
 
-    header .nav-links{
+    header div:nth-child(2){
+        display: none;
+    }
+
+    /* header .nav-links{
         position: absolute;
         width: 50%;
         height: 50%;
@@ -131,9 +139,9 @@ header ul li a:active{
 
     header ul li{
         opacity: 0;
-    }
+    } */
 }
 
-.nav-active{
+/* .nav-active{
     transform: translateX(0);
-}
+} */

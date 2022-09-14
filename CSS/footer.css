@@ -1,19 +1,25 @@
+.footer-style{
+    background: var(--violet2);
+}
+
 footer{
     background: var(--violet2);
     padding: 0 100px;
     padding-bottom: 100px;
+    /* border : 1px solid red; */
 }
 
 footer .contact-us{
     display: flex;
     color: var(--white);
     justify-content: space-between;
-    /*border: 1px solid orange;*/
+    align-items: center;
+    /* border: 1px solid orange;  */
 }
 
 footer .contact-us .loonarc{
     width: 35%;
-    /*border: 1px solid yellowgreen;*/
+    /* border: 1px solid yellowgreen; */
 }
 
 footer .contact-us .loonarc h2{
@@ -69,7 +75,8 @@ footer .contact-us .form{
     width: 22.8%;
     display: flex;
     flex-direction: column;
-    /*border: 1px solid yellowgreen;*/
+    /* align-items: center; 
+    border: 1px solid yellowgreen;*/
 }
 
 footer .contact-us h2{
@@ -140,8 +147,142 @@ footer .copyrights i{
 footer .copyrights .copyrights-loonarc{
     font-weight: bold;
 }
+
 /*footer .contact-us .form form{
     display: flex;
     flex-direction: column;
     border: 1px solid aquamarine;
+}*/
+
+@media screen and (max-width: 1535px){
+    footer .contact-us .form form input{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 1460px){
+    footer .contact-us .form{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    footer .contact-us .form{
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 1265px){
+    footer .contact-us .form{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1195px){
+    footer .contact-us .loonarc{
+        width: 33%;
+    }
+
+    footer .contact-us .company{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    footer .contact-us .form{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    footer .contact-us .loonarc{
+        width: 50%;
+    }
+
+    footer .contact-us .company{
+        display: none;
+    }
+
+    footer .contact-us .form{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 925px){
+    footer .contact-us .form{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    footer .contact-us{
+        flex-direction: column;
+    }
+
+    footer .contact-us .loonarc{
+        width: 90%;
+        text-align: justify;
+    }
+
+    footer .contact-us .company{
+        display: none;
+    }
+
+    footer .contact-us .form{
+        width: 95%;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    footer .contact-us .form form input{
+        width: 47%;
+    }
+
+    footer .contact-us .form form input:nth-child(1),
+    footer .contact-us .form form input:nth-child(3){
+        margin-right: 2.3%;
+    }
+
+    footer .contact-us .form form input:nth-child(2),
+    footer .contact-us .form form input:nth-child(4){
+        margin-left: 2.3%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    footer{
+        padding: 0 40px;
+    }
+
+    footer .contact-us .form{
+        width: 57%;
+    }
+
+    footer .contact-us .form form input{
+        width: 100%;
+    }
+
+    footer .contact-us .form form input:nth-child(1),
+    footer .contact-us .form form input:nth-child(3){
+        margin-right: 0;
+    }
+
+    footer .contact-us .form form input:nth-child(2),
+    footer .contact-us .form form input:nth-child(4){
+        margin-left: 0;
+    }
+
+    footer .copyrights p span:nth-child(2){
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    footer{
+        padding: 0 30px;
+    }
+
+    footer .contact-us .form{
+        width: 60%;
+    }
 }
